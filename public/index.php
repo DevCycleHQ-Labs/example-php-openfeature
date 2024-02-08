@@ -2,17 +2,26 @@
 require_once(__DIR__ . '/../vendor/autoload.php');
 include 'devcycle.php';
 
+// Import the DevCycleUser class from the DevCycle SDK. This class is used to create user objects for feature flag evaluations.
 use DevCycle\Model\DevCycleUser;
+// Import the EvaluationContext class from the OpenFeature SDK. This class is used to provide context for feature flag evaluations.
 use OpenFeature\implementation\flags\EvaluationContext;
 
+// Retrieve an instance of the DevCycle client. This client is used to interact with the DevCycle feature flagging service.
 $devcycle_client = get_devcycle_client();
 
+// Create a new DevCycleUser object with the specified user ID. This object represents a user for whom feature flags will be evaluated.
 $devcycle_user_data = new DevCycleUser(array(
-  "user_id" => "my-user"
+  "user_id" => "my-user" // The unique identifier for the user.
 ));
 
+// Retrieve an instance of the OpenFeature client. This client is used to interact with the OpenFeature feature flagging abstraction layer.
 $openfeature_client = get_openfeature_client();
 
+// Instantiate a new EvaluationContext object with 'devcycle_user_data' as its parameter. However, this seems to be a misuse or a typo,
+// as typically, the EvaluationContext should be instantiated with an array or similar structure representing the context, not a string.
+// If 'devcycle_user_data' is intended to be used as context, it should be passed directly as an object or its data extracted into an array,
+// not passed as a string literal.
 $openfeature_context = new EvaluationContext('devcycle_user_data');
 
 
