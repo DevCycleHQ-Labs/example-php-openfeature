@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0f17c719c11edb73caa9a1b388d071a2",
+    "content-hash": "1f76594e9fd61a45c7f9ae0e1e1b4e49",
     "packages": [
         {
             "name": "devcycle/php-server-sdk",
-            "version": "dev-main",
+            "version": "2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/DevCycleHQ/php-server-sdk.git",
-                "reference": "84f6a79b160835e5e127e6b1333d2b37baa5d944"
+                "reference": "d251cb04bb89c1e323083d2967bcdef374dfc663"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/DevCycleHQ/php-server-sdk/zipball/84f6a79b160835e5e127e6b1333d2b37baa5d944",
-                "reference": "84f6a79b160835e5e127e6b1333d2b37baa5d944",
+                "url": "https://api.github.com/repos/DevCycleHQ/php-server-sdk/zipball/d251cb04bb89c1e323083d2967bcdef374dfc663",
+                "reference": "d251cb04bb89c1e323083d2967bcdef374dfc663",
                 "shasum": ""
             },
             "require": {
@@ -33,7 +33,6 @@
                 "friendsofphp/php-cs-fixer": "^v3.49.0",
                 "phpunit/phpunit": "^10.5.10"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -63,9 +62,9 @@
             ],
             "support": {
                 "issues": "https://github.com/DevCycleHQ/php-server-sdk/issues",
-                "source": "https://github.com/DevCycleHQ/php-server-sdk/tree/main"
+                "source": "https://github.com/DevCycleHQ/php-server-sdk/tree/v2.0.1"
             },
-            "time": "2024-02-05T21:21:51+00:00"
+            "time": "2024-02-07T16:30:25+00:00"
         },
         {
             "name": "graham-campbell/result-type",
@@ -1318,9 +1317,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "devcycle/php-server-sdk": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

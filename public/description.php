@@ -1,5 +1,5 @@
 <?php
-// Retrieve the value of the "example-text" feature flag using the OpenFeature client. 
+// Retrieve the value of the "example-text" feature flag using the OpenFeature client.
 // The default value is "default" if the flag is not set or cannot be fetched.
 $step = $openfeature_client->getStringValue("example-text", "default", $openfeature_context);
 
@@ -22,7 +22,7 @@ switch ($step) {
         $body = "If you got to the example app on your own, follow our README guide to create the Feature and Variables you need to control this app in DevCycle.";
 }
 
-// The resulting $header and $body variables contain text that can be dynamically inserted into the webpage or app view, 
+// The resulting $header and $body variables contain text that can be dynamically inserted into the webpage or app view,
 // allowing the content to adapt based on the progression of the user through the onboarding process or their interaction with the example application.
 
 ?>

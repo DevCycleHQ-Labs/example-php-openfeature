@@ -41,8 +41,6 @@ $togglebot_src = $wink ? '/images/togglebot-wink.png' : '/images/togglebot.png';
 if ($speed === 'surprise') {
     $togglebot_src = '/images/unicorn.svg';
 }
-
-
 ?>
 
 <div class="App-content">
